@@ -37,7 +37,7 @@ train.csv reports ─> weak_labels.py ────> 12 binary labels
    and z-score it. Returns a float32 tensor of shape `(slices, 224, 224)`.
 3. **Weak-label extractor** (`weak_labels.py`): rule-based keyword matching for
    the 12 findings with basic negation handling ("no tear", "ACL intact",
-   "sin signos de rotura"). English and Spanish only.
+   "sin rotura"). English and Spanish only.
 
 Supporting scripts: `download_samples.py` (resumable Kaggle download),
 `view_series.py` / `save_slices.py` (look at slices), `explore_labels.py`
@@ -45,18 +45,7 @@ Supporting scripts: `download_samples.py` (resumable Kaggle download),
 
 ### Sample slices
 
-Four evenly spaced slices from one series of each of the 5 sample studies,
-produced by `python save_slices.py`:
-
-![Study 1](outputs/slices_study1.png)
-![Study 2](outputs/slices_study2.png)
-![Study 3](outputs/slices_study3.png)
-![Study 4](outputs/slices_study4.png)
-![Study 5](outputs/slices_study5.png)
-
-> These images are rendered from competition data, so they are not committed to
-> this repository. Download the data yourself (see below) and run
-> `python save_slices.py` to generate them.
+Example slice figures are generated locally by save_slices.py. They are not included here because the competition data license prohibits redistributing the images.
 
 ## Results (weak-label extractor)
 
