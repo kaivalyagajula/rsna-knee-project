@@ -1,0 +1,21 @@
+# data and environments
+data/
+venv/
+__pycache__/
+*.pyc
+
+# generated outputs
+outputs/*.npy
+
+# model weights
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.h5
+*.pkl
+models/
+checkpoints/
+weights/
+outputs/*.png
